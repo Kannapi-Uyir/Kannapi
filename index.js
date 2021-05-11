@@ -199,13 +199,13 @@ global.prems = []
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    owner: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] This command can only be used by the Number Owner!',
-    mods: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] This command can only be used by Moderators!',
-    premium: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] This command is only for Premium members!',
-    group: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] This command can only be used in groups!',
-    private: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] This command can only be used in Private Chats!',
-    admin: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] This command is for group admins only!',
-    botAdmin: '[ᴍʀ.ʀᴀᴠᴀɴᴀɴ] Make the bot as admin to use this command!'
+    owner: '*This command can only be used by the Number Owner!««*',
+    mods: '*»»This command can only be used by Moderators!««*',
+    premium: '*»»This command is only for Premium members!««*',
+    group: '*»»This command can only be used in groups!««*',
+    private: '*»»This command can only be used in Private Chats!««*',
+    admin: '*»»This command is for group admins only!««*',
+    botAdmin: '*»»Make the bot as admin to use this command!««*'
   }[type]
   msg && conn.reply(m.chat, msg, m)
 }
