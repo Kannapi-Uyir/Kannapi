@@ -3,7 +3,7 @@ let handler  = async (m, { conn, text }) => {
   for (let id of chats) conn.sendMessage(id, text + (/broadcast/im.test(text) ? '' : ('\n'+'\n'+'[ *BROADCAST* ]')), m.mtype, m.msg.contextInfo ? {
     contextInfo: m.msg.contextInfo
   } : {})
-  conn.reply(m.chat, `_Send broadcast messages to ${chats.length} chat_`, m)
+  conn.reply(m.chat, `*Send broadcast messages to ${chats.length} chat*`, m)
 }
 handler.help = ['broadcast','bc'].map(v => v + ' <teks>')
 handler.tags = ['owner']
